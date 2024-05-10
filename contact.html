@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #a0d1c1;
+            height: 100vh;
+        }
+        main {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 40px;
+            align-items: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin-left: 40px;
+            margin-bottom: 5px;
+        }
+
+        #guest {
+            margin-top: 10px;
+            width: 200px;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 70%;
+        }
+
+        button {
+            background-color: rgb(127, 218, 218);
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin-left: 30%;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="chef.jpeg" alt="Restaurant Logo" width="200px">
+            <h1>Reserve Your Table</h1>
+        </section>
+        
+        <form action="">
+            <label for="">Name</label>
+            <label for="name"></label>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name"><br>
+            <ul type="none">
+                <li>first Name</li>
+                <li>Last Name</li>
+            </ul>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="ololajaco@gmail.com"><br>
+
+            <label for="tel">Phone Number</label>
+            <input type="tel" pattern="(+000) 000-000" placeholder="(000) 000-000">
+
+            <hr>
+
+            <label for="guest" id="guest">Number of guests</label>
+            <select name="guest" id="guest">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10+">10</option>
+            </select>
+
+            <p>Reservation Date & Time</p>
+            <input type="datetime-local"><br>
+
+            <label for="note">Special Notes</label><br>
+            <textarea name="textarea" id="" cols="30" rows="10"></textarea><br>
+
+            <button>Reserve</button>
+        </form>
+    </main>
+</body>
+</html>
